@@ -2,11 +2,13 @@ import './App.css';
 import Create from './components/Create';
 import Edit from './components/Edit';
 import Show from './components/Show';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
 
 function App() {
   return (
+    <>
       <BrowserRouter>
         <Routes>
           <Route  path='/' element={ <Show /> } />
@@ -14,6 +16,7 @@ function App() {
           <Route  path='/edit/:id' element={ <Edit /> }/>
         </Routes>
       </BrowserRouter>
+      </>
   );
 }
 
