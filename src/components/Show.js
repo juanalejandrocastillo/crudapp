@@ -61,18 +61,18 @@ const Show = () => {
       <div className='container'>
         <div className='row'>
           <div className='col'>
-            <div className='d-grid gap-2'>
-              <Link to="/create" className='btn btn-primary mt-2 mb-2'>Create</Link>
+            <div className='d-grid gap-2 '>
+            <Link to="/create" className='btn btn-primary mt-2 mb-2'>Create</Link>
             </div>
             <table className='table table-dark'>
                 <thead >
                   <tr>
-                    <th>Description</th>
-                    <th>Stock</th>
-                    <th>Actions</th>
+                    <th className='text-center'>Description</th>
+                    <th className='text-center'>Stock</th>
+                    <th className='text-center'>Actions</th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody className='text-center'>
                   {products.map( (product) => (
                     <tr key={product.id}>
                       <td>{product.description}</td>
